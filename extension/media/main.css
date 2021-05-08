@@ -136,6 +136,14 @@ section {
 		rgba(0, 255, 255, 1) 100%
 	);
 }
+.swipe-left-button:hover,
+.swipe-left-button:hover,
+.swipe-right-button:hover,
+.swipe-right-button:hover {
+  background: linear-gradient(90deg, #f0f, #0ff);
+  background-size: 400% 400%;
+  animation: animatedgradient 5s linear alternate infinite;
+}
 
 .vs, .vs-dark, .hc-black, .link, .repo {
   background-size: contain;
@@ -169,4 +177,36 @@ header {
   h2 {
     font-size: 1rem;
   }
+}
+#thmImg{
+  display: inline-block;
+}
+.loadingImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 6px;
+  background: linear-gradient(90deg, #f0f, #0ff,#00f);
+  border-radius: 1rem;
+  z-index: 11;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+  
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 100% 500%;
+    }
+    75% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }

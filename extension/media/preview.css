@@ -135,3 +135,26 @@ article,
 header {
   margin-bottom: 1rem;
 }
+.previewImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  background: linear-gradient(60deg, #f0f, #0ff);
+  border-radius: 1rem;
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+  
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
